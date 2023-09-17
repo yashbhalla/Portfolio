@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/YashBhalla.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Yash Bhalla | Software Developer</title>
+
+
+    <script>
+      const burger = document.querySelector("#burger-menu");
+      const ul = document.querySelector("nav ul");
+      const nav = document.querySelector("nav");
+
+      burger.addEventListener("click", () =>{
+        ul.classList.toggle("show");
+      });
+
+      const navLink = document.querySelector(".nav-link");
+
+      navLink.forEach((link) =>{
+        link.addEventListener("click", ()=>{
+          ul.classList.remove("show");
+        });
+      });
+      
+    </script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1> YASH BHALLA </h1>
+      <ul class = "navigation">
+          <li>
+            <a href="https://www.linkedin.com/in/yashbhalla99/" target="_blank">
+              <img
+                src="assets/icons/LinkedIn.webp"
+                alt="LinkedIn"
+                loading="lazy"
+                class="socicon"
+              />
+            </a>
+          </li>
+            <a href="https://github.com/yashbhalla" target="_blank">
+              <img
+                src="assets/icons/GitHub.png"
+                alt="GitHub"
+                loading="lazy"
+                class="socicon"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:yash.bhalla@ufl.edu" target="_blank">
+              <img
+                src="assets/icons/mail.png"
+                alt="EMail"
+                loading="lazy"
+                class="socicon"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1ObemNiUUSpn0eVxkIwLHXluc4XxGrKUW/view?usp=sharing" target="_blank">
+              <img
+                src="assets/icons/Resume.png"
+                alt="Resume"
+                loading="lazy"
+                class="socicon"
+              />
+            </a>
+          </li>
+       <!-- <li><a href=#about" class="nav-link">About</a></li>
+        <li><a href=#skills" class="nav-link">Skills</a></li>
+        <!-- <li><a href=#workex" class="nav-link">Work Experience</a></li>
+        <li><a href=#project" class="nav-link">Project Work</a></li>
+        <!-- <li><a href=#contact" class="nav-link">Contact</a></li> -->
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <img 
+        src="assets/images/YashBhalla.png"
+        alt="YashBhalla"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          Hello, I'm Yash Bhalla!
+          <br>
+          I'm a graduate student at University of Florida interested in software development.<br>I am always curious to learn more about new technologies and creative coding.
+          <br>
+          I'm a firm believer in contributing to the community, and thrive in social interactions. My enthusiasm for life revolves around my passions for music, travel, photography, and food, seeking out fresh experiences to enrich my journey.
+          <br>
+          ____________________
+          <br>
+          <a href="https://www.linkedin.com/in/yashbhalla99/">LinkedIn</a> | 
+          <a href="https://github.com/yashbhalla">GitHub</a> | 
+          <a href="mailto:yash.bhalla@ufl.edu">E-Mail</a> | 
+          <a href="https://drive.google.com/file/d/1ObemNiUUSpn0eVxkIwLHXluc4XxGrKUW/view?usp=sharing">Resume</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skills-header">My Top Skills</h2>
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img 
+            src="assets/icons/CSharp.png"
+            alt="C# - .Net Framework & .Net Core"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img 
+            src="assets/icons/java.png"
+            alt="Java"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img 
+            src="assets/icons/C++.png"
+            alt="C++"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img 
+            src="assets/icons/cicd.png"
+            alt="CI/CD Process"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img 
+            src="assets/icons/icons8-git.svg"
+            alt="Git"
+            loading="lazy"
+            class="icon icon-card"
+          /> 
+          <img 
+            src="assets/icons/Agile.png"
+            alt="Agile Methodology"
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title"> My Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img 
+          src="assets/icons/Elevator.jpg"
+          alt="Multi-Elevator Control System"
+          loading="lazy"
+          class="project-pic"
+          />
+          <h3 class="project-title">Multi-Elevator Control System</h3>
+          <p class="project-details">
+            Sophisticated software system designed using C# to efficiently manage and coordinate multiple elevators within a building or complex. This project aims to provide a seamless and safe experience for passengers while optimizing elevator utilization and minimizing wait times. The software aims to create a sophisticated, intuitive, and intelligent elevator management system that sets a new standard for modern buildings.
+          </p>
+        </div>
+        <div class="project-container project-card">
+          <img 
+          src="assets/icons/lyrebird.png"
+          alt="LyreBird: Voice-to-Text Automated Software with Voice Classification"
+          loading="lazy"
+          class="project-pic"
+          />
+          <h3 class="project-title">LyreBird: Voice-to-Text Automated Software with Voice Classification</h3>
+          <p class="project-details">
+            Seamlessly merged a Neural Network and Convolutional Neural Network using Python. This potent system accurately discerns and distinguishes participants in a conversation. After rigorous development and training, it achieved a remarkable 99.8% precision in transcribing known speakers and 95% precision with new speakers.
+          </p>
+        </div>
+        <div class="project-container project-card">
+          <img 
+          src="assets/icons/tictac.png"
+          alt="Tic-Tac-Toe with Unbeatable AI"
+          loading="lazy"
+          class="project-pic"
+          />
+          <h3 class="project-title">Tic-Tac-Toe with Unbeatable AI</h3>
+          <p class="project-details">
+            Developed an exciting game using C++ and GUI featuring both "Single Player Mode" and "Multiplayer Mode". In the "Single Player Mode," players can challenge an unbeatable AI that is created from scratch. Adding a unique twist to the classic 'X's and 'O's, the game showcases 3D emojis for players to choose from.
+          </p>
+        </div>
+        <div class="project-container project-card">
+          <img 
+          src="assets/icons/medbazzar.jpg"
+          alt="MedBazaar: The Online Pharmaceutical Online Search Engine"
+          loading="lazy"
+          class="project-pic"
+          />
+          <h3 class="project-title">MedBazaar: The Online Pharmaceutical Online Search Engine</h3>
+          <p class="project-details">
+            Built a portal using HTML5, CSS3, and Bootstrap Framework that searches 200,000+ over-the-counter medicines from various pharmaceutical websites. The results are efficiently organized, allowing customers to easily select and compare drug prices. The back-end uses PHP, Apache Server, and MySQL to seamlessly integrate and manage the data.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- WorkEx section -->
+    
+
+    <!-- More about -->
+    <section class="more-about">
+      <h2>More About Me</h2>
+      <p>
+        Before joining University of Florida, I worked for Mercedes-Benz Research and Development India Pvt. Ltd. as a Software Consultant for 2+ Years. I initially learnt how to integrate NX with C# (.Net Framework) and NX Open APIs to solve assigned problem statements on the application, such as, creating lines and highlighting them to designing full-scale mechanical models and finding the volume of the shape This combination of technical expertise allowed me to provide efficient solutions and contribute to the success of projects.
+
+        <br><br>
+        Soon, I started contributing to the development of NX Add-Ons on Siemens NX, a CAD application, for the 3D Master Wiring Harness Team - primarily focused on C# (.Net Framework), ASP.NET, and NX Open APIs in a CI/CD delivery process following Agile Methodology. The NX-AddOns a suite of supplementary CAD tools customized to optimize the performance of our wiring harness design team in India. These were crafted to align seamlessly with the specifications provided by our esteemed German RD counterparts. I implemented 3 NX Add-Ons from scratch, using C#, and was responsible for the overall bug fixes, future enhancement and renovation of 12 NX Add-Ons out of 60 tools tailored for the RD colleagues.
+
+        <br><br>
+        I conceived, designed, and developed Tool Package, a WinForms Desktop Application, using C# (.Net Framework & .Net Core), WinForms, HTML 5, CSS 3, and XML. Being active in a CI/CD workflow, we implemented new enhancements regularly. However, the manual process of transferring essential files and folders to the shared drive proved to be error-prone, causing unnecessary bug fix tickets. Thus, the development of Tool Package enhanced the efficiency of the CI/CD process by offering a seamless one-click solution. It reduced the delivery time by an impressive 6000%, nullified redundant tickets, and got nominated for "My First Innovation" under Product and Business Innovation categories. 
+
+        <br><br>
+        I pioneered Smoke Test, a WinForms Desktop Application, built on C# (.Net Framework) and WinForms, integrated with UiPath to automate testing of over 60 NX Add-On tools. The application runs all the tools on a master harness, generates a .CSV file with the test results of each tool, and captures screenshots of all the runs, whether the tool ran successfully or encountered errors, in a new "SmokeTestResult" folder. This crucial application is used every six months in the NX roll-out process to identify the faulty tools and promptly inform the developers.
+
+        <br><br>
+        I also took up various leadership roles and conducted extra-curricular activities at a departmental and organizational level. Some of the key roles mentioned below:
+        <br>
+        1. As the Brand Ambassador of Home of Tech community, I actively contributed to its growth, generating awareness and promoting the technological communities at a departmental level. We saw an increase of 1000+ users within the first few months. 
+        <br>
+        2. Spearheaded the Virtual IT & EE Event, TechFlame, under the Campus Connect initiative to discover the top talents from best colleges and universities in India. Being incharge, my team and I orchestrated the whole event from ideation to execution successfully.
+        <br>
+        3. Being the Innovation Catalyst, I drove innovation within the department for 500+ colleagues by conducting campaigns to explore new opportunities, collaborate and cooperate with others to implement cutting-edge solutions, and apply for patents, if applicable. We also assisted the teams by providing the right platform for them to showcase their innovations at the organizational level.
+        <br>
+        4. Organised a successful Virtual Fresher's Meet-&-Greet for 50+ Student Intern Trainees joining MBRDI in February 2022 and GET Onboarding Sessions, tailored to the needs of 50+ GETs joining MBRDI in July 2022, alongside a team of dedicated volunteers.
+        <br>
+        5. Moderator for the CAD CoC Shopfloor Workshop for the Year 2022, facilitating knowledge-sharing and collaboration within the CAD CoC for 250+ colleagues. 
+        <br>
+        6. Served as the SPOC for Fun Brigade at the departmental level, conducting engaging employee activities and competitions to enhance team morale and foster a positive work environment. The Fun Brigade team also conducted TechCARnival, a week-long celebration for IT India at MBRDI, in Year 2022 for more than 2500+ colleagues.
+      </p>
+    </section>
+
+
+    
+    <!-- Social accounts - Fixed to the right 
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/yashbhalla99/" target="_blank">
+        <img
+          src="assets/icons/icons8-linkedin-circled.gif"
+          alt="LinkedIn"
+          loading="lazy"
+          class="socicon"
+        />
+      </a>
+      <a href="https://github.com/yashbhalla" target="_blank">
+        <img
+          src="assets/icons/icons8-github.gif"
+          alt="GitHub"
+          loading="lazy"
+          class="socicon"
+        />
+      </a>
+      <a href="https://www.instagram.com/bhalla_boi/" target="_blank">
+        <img
+          src="assets/icons/icons8-instagram.gif"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+        />
+      </a>
+    </div> -->
+
+    
+
+    <!-- Footer section -->
+    <footer>
+      <p class="copy">&copy; Copyright 2023</p>
+      <p class="copy">Built by Yash Bhalla</p>
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
