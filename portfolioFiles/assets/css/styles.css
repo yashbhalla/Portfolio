@@ -102,15 +102,45 @@ nav ul li{
 }
 
 .hero img{
-  height: 30.5rem;
-  width: 30.5rem;
+  height: 30rem;
+  width: 30rem;
+}
+
+.leadership{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 68.75 rem;
+  margin: auto;
+  text-align: center; 
+  height: 50rem;
+}
+
+.leadership-header{
+  margin-top: 3.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.leadership img{
+  width: 40rem;
+  height: 30rem;
+}
+
+.leadershipBio{
+  margin-top: 1rem;
+  width: 35rem;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
 .bio{
   margin-top: 2rem;
   width: 25rem;
   padding: 0.625rem;
-  border-radius: 6px;
+  border-radius: 15px;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
@@ -123,6 +153,75 @@ nav ul li{
   text-align: center;
   line-height: var(--line-height);
   padding: 0.3rem 0;
+}
+
+.work-ex{
+  text-align: center; 
+  margin-top: 2.5rem;
+  height: 475px;
+}
+
+.work-ex-header{
+  margin-bottom: 1rem;
+}
+
+.work-ex-wrapper{
+  padding: 1rem;
+}
+
+#work-ex-imageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+#work-ex-sliderImage {
+  width: 35%;
+  height: 35%;
+}
+
+.work-ex-text-bubble {
+  position: absolute;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;  
+  display: inline-block;
+}
+
+.work-ex-text-bubble:not(:last-child) {
+  margin-bottom: -20px; 
+}
+
+.top-left {
+  resize: vertical;
+  height: 200px;
+  width: 300px;
+  top: 10px;
+  left: 10px;
+  align-self: flex-start;
+}
+
+.top-right {
+  margin-top: 15px;
+  resize: vertical;
+  height: 315px;
+  width: 300px;
+  top: 10px;
+  right: 10px;
+  align-self: flex-end;  
+}
+
+.bottom-left {
+  resize:vertical;
+  height: 135px;
+  width: 300px;
+  bottom: 10px;
+  left: 10px;  
+  align-self: flex-start;
 }
 
 .more-about{
@@ -155,6 +254,18 @@ nav ul li{
   padding: 1.25rem;
 }
 
+.skills-wrapper img:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.work-ex img{
+  border-radius: 50%;
+}
+
+.work-ex img:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 .icon{
   width: 11.875rem;
   height: 11.5rem;
@@ -168,8 +279,7 @@ nav ul li{
   margin: 10px;
 }
 
-.projects{
-  background-color: var(--bg-color);
+.projects{  
   padding: 32px 0;
   margin-top: 2rem;
 }

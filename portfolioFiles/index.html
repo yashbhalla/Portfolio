@@ -84,7 +84,7 @@
             </a>
           </li>
           <li>
-            <a href="https://drive.google.com/file/d/1ObemNiUUSpn0eVxkIwLHXluc4XxGrKUW/view?usp=sharing" target="_blank">
+            <a href="https://drive.google.com/file/d/1p7fE2i8pBFQD1pm0unp94w1orOON59eZ/view?usp=share_link" target="_blank">
               <img
                 src="assets/icons/Resume.png"
                 alt="Resume"
@@ -93,11 +93,6 @@
               />
             </a>
           </li>
-       <!-- <li><a href=#about" class="nav-link">About</a></li>
-        <li><a href=#skills" class="nav-link">Skills</a></li>
-        <!-- <li><a href=#workex" class="nav-link">Work Experience</a></li>
-        <li><a href=#project" class="nav-link">Project Work</a></li>
-        <!-- <li><a href=#contact" class="nav-link">Contact</a></li> -->
       </ul>
       <button class="burger-menu" id="burger-menu">
         <ion-icon class="bars" name="menu-outline"></ion-icon>
@@ -113,27 +108,27 @@
         class="hero-img"
       />
       <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">About Me</h2>
+        <h2 class="bio-title"><u>About Me</u></h2>
         <p class="bio-text">
           Hello, I'm Yash Bhalla!
           <br>
-          I'm a graduate student at University of Florida interested in software development.<br>I am always curious to learn more about new technologies and creative coding.
+          I'm a graduate student at University of Florida interested in software development.<br>I am always curious to learn more about new technologies and enjoy creative coding.
           <br>
-          I'm a firm believer in contributing to the community, and thrive in social interactions. My enthusiasm for life revolves around my passions for music, travel, photography, and food, seeking out fresh experiences to enrich my journey.
+          I'm a firm believer in contributing to the community, and thrive in social interactions. My enthusiasm for life revolves around my passions for music, travel, photography, and food, always seeking out fresh experiences to enrich my journey.
           <br>
           ____________________
           <br>
           <a href="https://www.linkedin.com/in/yashbhalla99/">LinkedIn</a> | 
           <a href="https://github.com/yashbhalla">GitHub</a> | 
           <a href="mailto:yash.bhalla@ufl.edu">E-Mail</a> | 
-          <a href="https://drive.google.com/file/d/1ObemNiUUSpn0eVxkIwLHXluc4XxGrKUW/view?usp=sharing">Resume</a>
+          <a href="https://drive.google.com/file/d/1p7fE2i8pBFQD1pm0unp94w1orOON59eZ/view?usp=share_link">Resume</a>
         </p>
       </div>
     </section>
 
     <!-- Skills section -->
     <section class="skills" id="skills">
-      <h2 class="skills-header">My Top Skills</h2>
+      <h2 class="skills-header"><u>My Top Skills</u></h2>
       <div class="skills-wrapper">
         <div class="first-set animate__animated animate__pulse">
           <img 
@@ -176,9 +171,102 @@
       </div>
     </section>
 
+    <!-- WorkEx section -->
+    <section class = "work-ex">
+      <h2 class="work-ex-header"><u>My Work Experience</u></h2>
+      <h3 class="work-ex-header"><u>Mercedes-Benz Research and Development India Pvt. Ltd.</u></h3>
+      <div class="work-ex-wrapper">
+        <div id="work-ex-imageContainer">
+          <div class="work-ex-text-bubble top-left">
+            Implemented 3 NX Add-Ons tools from scratch, and responsible for the overall bug fixes, future enhancement and renovation of 12+ NX Add-Ons on Siemens NX, a CAD application, primarily focused on C# (.Net Framework), ASP.NET and NX Open APIs, following CI/CD delivery process in an agile methodology. 
+          </div>
+          <img id="work-ex-sliderImage" src="" alt="Mercedes-Benz Research & Development India">
+          <div class="work-ex-text-bubble bottom-left">
+            Pioneered Smoke Test, a WinForms Desktop Application, built on C# (.Net Framework), and WinForms, integrated with UiPath to automate the testing of over 60 NX Add-On tools.
+          </div>
+          <div class="work-ex-text-bubble top-right">
+            Developed Tool Package, a WinForms Desktop Application, using C# (.Net Framework & .Net Core), WinForms, HTML 5, CSS 3, and XML.
+            <br><br>
+            Enhanced the efficiency of the CI/CD process by reducing the delivery time by an impressive 6000% and nullified redundant tickets being created due to missing files in Test or Application shared folders.
+            <br><br>
+            Nominated for "My First Innovation" under Product and Business Innovation categories.
+          </div>
+        </div>
+      </div>
+      <script>
+        const imagesFolder = './assets/icons/'; // Assuming images are in a folder named 'images'
+        const imageNames = ['MBRDI.jpg', 'Maybach.avif', 'WH.jpg', 'Interior.webp','WHTab.jpg']; // Add your image file names
+
+        const imageContainer = document.getElementById('work-ex-imageContainer');
+        const sliderImage = document.getElementById('work-ex-sliderImage');
+
+        let currentIndex = 0;
+
+        function loadNextImage() {
+          if (currentIndex === imageNames.length) {
+            currentIndex = 0;
+          }
+          const imagePath = imagesFolder + imageNames[currentIndex];
+          sliderImage.src = imagePath;
+
+          currentIndex++;
+        }
+        setInterval(loadNextImage, 3500);
+      </script>
+    </section>
+
+    <!-- Leadership section-->
+    <section id="leadership">
+    <h2 class="leadership-header"><u>My Leadership & Extra-Curricular Experience</u></h2>
+      <div class="leadership">
+        <img 
+          src="assets/images/leader.png"
+          alt="leadership"
+          loading="lazy"
+          class="hero-img"
+        />
+        <div class="leadershipBio">
+          <h4 class="bio-text">
+            <br>
+            <h4>Brand Ambassador of Home of Tech</h4>
+            Actively contributed to its growth, generating awareness with an increase of 1000+ users within the first few months. 
+            <br><br>
+
+            <h4>Campus Connect Organizer for TechFlame</h4>
+            A Virtual IT & EE Event to discover the top talents from best colleges and universities in India.
+            <br><br>
+
+            <h4>Innovation Catalyst</h4>
+            Drove innovation within the department for 500+ colleagues by conducting campaigns to explore new opportunities, collaborate, apply for patents and implement cutting-edge solutions.
+            <br><br>
+
+            <h4>Department Event Organizer</h4>
+            Organised Meet-&-Greet for 50+ Interns and 50+ GETs joining MBRDI in February and July of the year 2022.
+            <br><br>
+
+            <h4>Moderator for Bi-Weekly Shopfloor Workshop</h4> 
+            Facilitated knowledge-sharing and collaboration within the CAD CoC for 250+ colleagues for the Year 2022. 
+            <br><br>
+
+            <h4>SPOC for Fun Brigade</h4>
+            Conducted engaging employee activities and competitions to enhance team morale and foster a positive work environment. Conducted TechCARnival, a week-long celebration for IT India at MBRDI, in Year 2022 for more than 2500+ colleagues.
+            <br><br>
+
+            <h4>Vice President of Computer Society of India</h4>
+            Lead a team of 350+ students from the ISE and CSE branches in organizing the highly successful 33rd CSI State Level Convention, held at the esteemed Dayananda Sagar Academy of Technology and Management, with participation from over 30+ colleges and universities.
+            <br><br>
+
+            <h4>Department Student Coordinator & Representative</h4>
+            Successfully organized and coordinated 5 Competitive Coding Challenges, 3 Project Expos, and 7 Workshops. Took the initiative to organize and conduct Departmental Clubs for the CSE Department. Conducted Exe.bit 2k19, CSE Department Fest for the academic year of 2019-20.
+            <br>
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- Projects section -->
     <section class="projects" id="projects">
-      <h2 class="projects-title"> My Recent Projects</h2>
+      <h2 class="projects-title"><u>My Recent Projects</u></h2>
       <div class="projects-container">
         <div class="project-container project-card">
           <img 
@@ -231,73 +319,51 @@
       </div>
     </section>
 
-
-    <!-- WorkEx section -->
-    
-
-    <!-- More about -->
+  <!-- More about
     <section class="more-about">
-      <h2>More About Me</h2>
+      <h2><u>More About Me</u></h2>
       <p>
-        Before joining University of Florida, I worked for Mercedes-Benz Research and Development India Pvt. Ltd. as a Software Consultant for 2+ Years. I initially learnt how to integrate NX with C# (.Net Framework) and NX Open APIs to solve assigned problem statements on the application, such as, creating lines and highlighting them to designing full-scale mechanical models and finding the volume of the shape This combination of technical expertise allowed me to provide efficient solutions and contribute to the success of projects.
+        <h3>Technical Contributions:</h3>
+        Before joining University of Florida, I worked for Mercedes-Benz Research and Development India Pvt. Ltd. (MBRDI) as a Software Consultant for 2+ Years. My expertise in Object-Oriented Programming helped me contribute to the 3D Master Wiring Harness Team in numerous ways. Some of my contributions are mentioned below:
+        <br><br>
+        1. Contributed to the development of NX Add-Ons on Siemens NX, a CAD application, for the 3D Master Wiring Harness Team - primarily focused on <b>C# (.Net Framework), ASP.NET, NX Open APIs, CI/CD process, as well as agile methodology.</b> The NX-AddOns, a suite of supplementary CAD tools, customized to optimize the performance of our wiring harness design team in India. These tools were meticulously crafted to align seamlessly with the specifications provided by our esteemed German RD counterparts. 
+        <br><br>
+        2. Implemented <b>3 NX Add-Ons</b> from scratch, using C#, and was responsible for the overall bug fixes, future enhancement and renovation of <b>12 NX Add-Ons out of 60 tools</b> tailored for the RD colleagues. 
+        <br><br>
+        3. Conceived, designed, and developed Tool Package, a WinForms Desktop Application, using <b>C# (.Net Framework & .Net Core), WinForms, HTML 5, CSS 3, and XML.</b> Being active in a CI/CD workflow, we implemented new enhancements regularly. However, the manual process of transferring essential files and folders to the shared drive proved to be error-prone, causing unnecessary bug fix tickets. Thus, the development of Tool Package <b>enhanced the efficiency of the CI/CD process</b> by offering a seamless one-click solution. It <b>reduced the delivery time by an impressive 6000%</b>, nullified redundant tickets, and got <b>nominated for "My First Innovation"</b> under Product and Business Innovation categories. 
+        <br><br>
+        4. Pioneered Smoke Test, a WinForms Desktop Application, built on <b>C# (.Net Framework), and WinForms, integrated with UiPath</b> to automate the <b>testing of over 60 NX Add-On tools.</b> The application runs all the tools on a master harness, generates a .CSV file with the test results of each tool, and captures screenshots of all the runs, whether the tool ran successfully or encountered errors, in a new "SmokeTestResult" folder. This crucial application is <b>used every 6 months in the NX roll-out process</b> to identify the faulty tools and promptly inform the developers.
 
         <br><br>
-        Soon, I started contributing to the development of NX Add-Ons on Siemens NX, a CAD application, for the 3D Master Wiring Harness Team - primarily focused on C# (.Net Framework), ASP.NET, and NX Open APIs in a CI/CD delivery process following Agile Methodology. The NX-AddOns a suite of supplementary CAD tools customized to optimize the performance of our wiring harness design team in India. These were crafted to align seamlessly with the specifications provided by our esteemed German RD counterparts. I implemented 3 NX Add-Ons from scratch, using C#, and was responsible for the overall bug fixes, future enhancement and renovation of 12 NX Add-Ons out of 60 tools tailored for the RD colleagues.
 
+        <h3>Leadership & Extra-Curricular Experience:</h3>
+        Having excellent public relationship management skills, I took up various leadership roles and organized numerous extra-curricular activities at a departmental and organizational level for MBRDI and a few notable ones during my undergrad, showcasing cross-functional collaboration. Some of the key roles mentioned below:
         <br><br>
-        I conceived, designed, and developed Tool Package, a WinForms Desktop Application, using C# (.Net Framework & .Net Core), WinForms, HTML 5, CSS 3, and XML. Being active in a CI/CD workflow, we implemented new enhancements regularly. However, the manual process of transferring essential files and folders to the shared drive proved to be error-prone, causing unnecessary bug fix tickets. Thus, the development of Tool Package enhanced the efficiency of the CI/CD process by offering a seamless one-click solution. It reduced the delivery time by an impressive 6000%, nullified redundant tickets, and got nominated for "My First Innovation" under Product and Business Innovation categories. 
-
-        <br><br>
-        I pioneered Smoke Test, a WinForms Desktop Application, built on C# (.Net Framework) and WinForms, integrated with UiPath to automate testing of over 60 NX Add-On tools. The application runs all the tools on a master harness, generates a .CSV file with the test results of each tool, and captures screenshots of all the runs, whether the tool ran successfully or encountered errors, in a new "SmokeTestResult" folder. This crucial application is used every six months in the NX roll-out process to identify the faulty tools and promptly inform the developers.
-
-        <br><br>
-        I also took up various leadership roles and conducted extra-curricular activities at a departmental and organizational level. Some of the key roles mentioned below:
-        <br>
         1. As the Brand Ambassador of Home of Tech community, I actively contributed to its growth, generating awareness and promoting the technological communities at a departmental level. We saw an increase of 1000+ users within the first few months. 
-        <br>
+        <br><br>
         2. Spearheaded the Virtual IT & EE Event, TechFlame, under the Campus Connect initiative to discover the top talents from best colleges and universities in India. Being incharge, my team and I orchestrated the whole event from ideation to execution successfully.
-        <br>
+        <br><br>
         3. Being the Innovation Catalyst, I drove innovation within the department for 500+ colleagues by conducting campaigns to explore new opportunities, collaborate and cooperate with others to implement cutting-edge solutions, and apply for patents, if applicable. We also assisted the teams by providing the right platform for them to showcase their innovations at the organizational level.
-        <br>
+        <br><br>
         4. Organised a successful Virtual Fresher's Meet-&-Greet for 50+ Student Intern Trainees joining MBRDI in February 2022 and GET Onboarding Sessions, tailored to the needs of 50+ GETs joining MBRDI in July 2022, alongside a team of dedicated volunteers.
-        <br>
+        <br><br>
         5. Moderator for the CAD CoC Shopfloor Workshop for the Year 2022, facilitating knowledge-sharing and collaboration within the CAD CoC for 250+ colleagues. 
-        <br>
+        <br><br>
         6. Served as the SPOC for Fun Brigade at the departmental level, conducting engaging employee activities and competitions to enhance team morale and foster a positive work environment. The Fun Brigade team also conducted TechCARnival, a week-long celebration for IT India at MBRDI, in Year 2022 for more than 2500+ colleagues.
+        <br><br>
+        7. Elected as the Vice President of Computer Society of India and I had the privilege of coordinating and leading a team of 350+ students from the ISE and CSE branches in organizing the highly successful 33rd CSI State Level Convention, held at the esteemed Dayananda Sagar Academy of Technology and Management, with participation from over 30 colleges and universities.
+        <br><br>
+        8. As the Department Student Coordinator & Representative, I successfully spearheaded 5 Competitive Coding Challenges, organized 3 Project Expos, and coordinated 7 workshops in collaboration with renowned companies across India, including Bosch Rexroth India Ltd, GeeksLab Technologies Pvt Ltd, CyberCure Technologies, and more.
+        <br>
+        As a member of the Official Media Club at Dayananda Sagar Academy of Technology and Management, I represented the Computer Science and Engineering Department in meetings, providing bi-weekly updates.
+        <br>
+        I took the initiative to organize and conduct Departmental Clubs for the Computer Science Department at Dayananda Sagar Academy of Technology and Management. These clubs offered students the opportunity to join any two clubs of their choice, including options like Coding Club, Music Club, Arts and Culture Club, Dance Club, Literature Club, and Photography and Videography Club. 
+        <br>
+        Additionally, I successfully coordinated and conducted the Departmental Fest for the academic year of 2019-20, called Exe.bit 2k19. This event, held at the CSE Department, provided a platform for students to showcase their talents and skills in various domains. It was a memorable experience, fostering a sense of camaraderie and enthusiasm within the department. Also served as part of the media crew, capturing the essence of the event.
       </p>
     </section>
+  -->
 
-
-    
-    <!-- Social accounts - Fixed to the right 
-    <div class="socials">
-      <a href="https://www.linkedin.com/in/yashbhalla99/" target="_blank">
-        <img
-          src="assets/icons/icons8-linkedin-circled.gif"
-          alt="LinkedIn"
-          loading="lazy"
-          class="socicon"
-        />
-      </a>
-      <a href="https://github.com/yashbhalla" target="_blank">
-        <img
-          src="assets/icons/icons8-github.gif"
-          alt="GitHub"
-          loading="lazy"
-          class="socicon"
-        />
-      </a>
-      <a href="https://www.instagram.com/bhalla_boi/" target="_blank">
-        <img
-          src="assets/icons/icons8-instagram.gif"
-          alt="Instagram"
-          loading="lazy"
-          class="socicon"
-        />
-      </a>
-    </div> -->
-
-    
 
     <!-- Footer section -->
     <footer>
